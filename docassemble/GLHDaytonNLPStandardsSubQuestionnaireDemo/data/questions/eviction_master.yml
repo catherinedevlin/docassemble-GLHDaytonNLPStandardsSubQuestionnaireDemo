@@ -1,10 +1,27 @@
+---
+include:
+  - preble-cities.yml
+  - montgomery-cities.yml
 --- 
 question: Thank you for your information.
-subquestion: |
-  We will do something with it.
- 
-  Something wonderful.
+subquestion: | 
+  We hope you love living in ${cinfo}
+  in ${county} county.
 buttons:
   - Exit: exit
 mandatory: True
 ---
+code: |
+  if county == 'Montgomery':
+    cinfo = montgomery_cities
+  elif county == 'Preble':
+    cinfo = preble_cities
+---
+question: |
+  What county do you live in?
+field: county
+buttons:
+  - Montgomery
+  - Preble
+---
+
