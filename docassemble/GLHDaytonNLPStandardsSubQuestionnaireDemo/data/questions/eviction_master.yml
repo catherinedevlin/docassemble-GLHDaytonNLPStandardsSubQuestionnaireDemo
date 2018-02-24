@@ -2,6 +2,8 @@
 question: Thank you for your information.
 subquestion: |
   We will do something with it.
+ 
+  Something wonderful.
 buttons:
   - Exit: exit
 mandatory: True
