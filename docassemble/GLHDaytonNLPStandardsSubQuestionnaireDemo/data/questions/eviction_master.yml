@@ -1,0 +1,8 @@
+--- 
+question: Thank you for your information.
+subquestion: |
+  We will do something with it.
+buttons:
+  - Exit: exit
+mandatory: True
+---
