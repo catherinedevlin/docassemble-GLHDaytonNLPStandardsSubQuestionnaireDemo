@@ -2,7 +2,12 @@
 include:
   - preble-cities.yml
   - montgomery-cities.yml
---- 
+  - greene-cities.yml
+  - miami-cities.yml
+  - clark-cities.yml
+  - warren-cities.yml
+  - darke-cities.yml
+---
 question: Thank you for your information.
 subquestion: | 
   We hope you love living in ${cinfo}
@@ -16,6 +21,16 @@ code: |
     cinfo = montgomery_cities
   elif county == 'Preble':
     cinfo = preble_cities
+  elif county == 'Greene':
+    cinfo = greene_cities
+  elif county == 'Miami':
+    cinfo = miami_cities
+  elif county == 'Clark':
+    cinfo = clark_cities
+  elif county == 'Warren':
+    cinfo = warren_cities
+  elif county == 'Darke':
+    cinfo = darke_cities
 ---
 question: |
   What county do you live in?
@@ -23,5 +38,10 @@ field: county
 buttons:
   - Montgomery
   - Preble
+  - Greene
+  - Miami
+  - Clark
+  - Warren
+  - Darke
 ---
 
